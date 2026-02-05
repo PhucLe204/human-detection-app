@@ -58,8 +58,9 @@ else:
         
         st.write(f"Raw Score: {score}")
         
-        if score < 0.5:
+        if score > 0.5:
             st.success(" ĐÂY LÀ CON NGƯỜI")
             st.balloons()
         else:
-            st.error(" KHÔNG PHẢI NGƯỜI")
+
+            st.error(" KHÔNG PHẢI NGƯỜI (Raw score: {score})")
