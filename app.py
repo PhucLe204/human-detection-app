@@ -62,7 +62,8 @@ else:
 
         # --- 5. LOGIC CHUẨN (Folder 1 là Human) ---
         if score > 0.5:
-            st.success(f" ĐÂY LÀ CON NGƯỜI (Độ tin cậy: {score*100:.2f}%)")
+            st.success(f" ĐÂY LÀ CON NGƯỜI ")
             st.balloons()
         else:
-            st.error(f" KHÔNG PHẢI NGƯỜI (Độ tin cậy: {(1-score)*100:.2f}%)")
+            st.error(f" KHÔNG PHẢI NGƯỜI ")
+
